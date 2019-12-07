@@ -1,0 +1,33 @@
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'common/sass/variables';
+@import 'common/sass/mixins';
+@import 'common/sass/functions';
+
+// Common
+@import 'common/sass/fonts';
+@import 'common/sass/reset';
+@import 'common/sass/global';
+@import "common/sass/slick";
+@import 'common/sass/icons';
+@import 'common/sass/button';
+@import 'common/sass/tables';
+@import "common/sass/tabs";
+@import "common/sass/card";
+
+// Pages
+@import 'pages/main/main';
+@import "pages/style-guide/style-guide";
+
+// Components
+@import "components/preloader/preloader";
+@import "components/hamburgers/hamburgers";
+@import "components/header/header";
+@import "components/about/about";
+@import "components/games/games";
+@import "components/prices/prices";
+@import "components/gallery/gallery";
+@import "components/team/team";
+@import "components/partners/partners";
+@import "components/contacts/contacts";
+@import "components/footer/footer";
+

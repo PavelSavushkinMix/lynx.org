@@ -1,0 +1,12 @@
+.card {
+  /*display: flex;
+  flex-direction: column;*/
+
+  &__image {
+    margin: 0 auto;
+  }
+
+  &__body {
+    text-align: center;
+  }
+}

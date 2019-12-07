@@ -1,0 +1,54 @@
+@import "../../common/sass/mixins";
+
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &__container {
+    @include container();
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+  }
+  &__phone {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-top: 0;
+      margin-bottom: 0;
+      transform: translateX(-40%);
+    }
+  }
+  &__social {
+    margin-bottom: 20px;
+    @include tablet{
+      margin-bottom: 0;
+    }
+  }
+  &__social-link {
+    margin-left: 20px;
+    font-size: 30px;
+    color: $color-gray-10;
+    transition: color 0.5s;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      color: $color-blue-light;
+    }
+    span {
+      font-size: 0;
+    }
+  }
+  &__site {
+    display: block;
+    text-align: center;
+  }
+}

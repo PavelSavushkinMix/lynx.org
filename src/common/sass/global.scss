@@ -1,0 +1,134 @@
+// scss-lint:disable VendorPrefix
+* {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+}
+
+html {
+  direction: ltr;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: $color-light;
+  font-family: $font-family-base;
+  font-display: swap;
+  font-size: $fontSize-default;
+  font-weight: $font-weight-regular;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: $color-blue-20;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: $font-family-base;
+  font-display: swap;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea {
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    //color: $color-dark;
+  }
+
+  &::-moz-placeholder {
+    //color: $color-dark;
+  }
+
+  &:-ms-input-placeholder {
+    //color: $color-dark;
+  }
+
+  &:focus {
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    &::-moz-placeholder {
+      color: transparent;
+    }
+
+    &:-ms-input-placeholder {
+      color: transparent;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
+textarea {
+  resize: none;
+  overflow-y: auto;
+}
+
+a {
+  color: $color-light;
+  text-decoration: none;
+}
+
+b {
+  font-weight: bold;
+}
+
+.title {
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Gilroy-Bold', serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: url("../images/line.png") no-repeat center;
+  }
+}
+
+.title-medium {
+  font-size: $fontSize-medium + 4;
+  font-weight: bold;
+}
+
+.title-small {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: $fontSize-small;
+  font-family: "Geometria-Regular", sans-serif;
+}
+
+.text-small {
+  font-size: $fontSize-extra-small;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+

@@ -1,0 +1,15 @@
+.gallery {
+  &_content {
+    img {
+      width: 100%;
+    }
+  }
+  &__img {
+    filter: opacity(70%);
+  }
+
+  &__slick {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}

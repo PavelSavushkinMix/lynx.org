@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  z-index: 2;
+
+  @include desktop {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.12);
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    z-index: 11;
+  }
+
+  &__nav-wrap {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__nav-contacts {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__contacts-phone {
+    display: none;
+    position: relative;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+    span {
+      font-style: italic;
+      color: $color-brown-50;
+    }
+    @include tablet {
+      position: relative;
+      display: flex;
+    }
+  }
+}
+
+.header {
+  &__nav-items {
+    a {
+      &:hover {
+        color: $color-error;
+        border-bottom: 2px solid $color-red;
+        opacity: 0.8;
+        transition: 0.2s;
+      }
+    }
+
+    a.active {
+      color: $color-red;
+      font-weight: bold;
+      border-bottom: 2px solid $color-red;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      li {
+        padding-left: 40px;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.m-show {
+  display: block;
+  z-index: 10;
+
+  .header__nav-items {
+    li {
+      padding: 15px 0;
+    }
+  }
+}
+
+.header__nav-wrap.m-show {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+
+  padding: 0 20px;
+
+  background-color: $color-blue-110;
+  z-index: 10;
+
+  hr {
+    width: 100%;
+  }
+}
+
+.hamburger {
+  z-index: 11;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+svg:hover {
+  fill: yellow;
+}
+
+.header-color-fixed {
+  background-color: #081D2A;
+}

@@ -1,0 +1,80 @@
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: $color-blue-20 url("/assets/images/bg-main-mob.jpg") no-repeat top;
+  background-size: cover;
+
+  @include mobile {
+    min-height: 500px;
+    background-image: url("/assets/images/bg-main.jpg");
+  }
+
+  @include tablet {
+    height: 100vh;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    margin-bottom: 22px;
+
+    @include desktop {
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+
+  .sub-title {
+    color: #ffffffad;
+  }
+
+  &__description {
+    margin-bottom: 44px;
+    @include desktop {
+      max-width: 610px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    h1:after {
+      background: none;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    @include desktop {
+      .btn__callback {
+        margin: 0;
+      }
+    }
+  }
+
+  .btn__video {
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+
+    @include desktop {
+      position: absolute;
+      right: 0;
+      height: 200px;
+      margin-left: 30px;
+      padding-left: 40px;
+      background: url("/assets/images/bg-video.jpg");
+    }
+
+    .icon-play {
+      font-size: 30px;
+      margin-right: 20px;
+    }
+  }
+}
+

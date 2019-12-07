@@ -1,0 +1,124 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    @include tablet {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__content {
+    flex-direction: column;
+    padding: 30px 0;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__content-description {
+    padding: 30px 0;
+
+    @include tablet {
+      width: 50%;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      text-align: left;
+    }
+
+    .btn__callback {
+      display: none;
+    }
+  }
+
+  &__content-price {
+    b {
+      font-size: $fontSize-large;
+    }
+  }
+
+  &__images {
+    @include tablet {
+      max-width: 50%;
+      width: 100%;
+    }
+  }
+}
+
+.tabs-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  -webkit-appearance: none;
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.9);
+
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: calc(50% + 11px);
+    right: 0;
+    max-width: 64px;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    transform: scaleY(0) translateX(-50%);
+    background-color: $color-red;
+    transition: transform 0.3s;
+
+    @include tablet {
+      max-width: calc(64px / 2);
+      bottom: -10px;
+    }
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+  &:hover:not(.is-active) {
+    color: rgba(255, 255, 255, 0.5);
+
+    .tabs-btn__icon {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  &.is-active {
+    color: $color-white;
+    &:after {
+      transform: scaleY(1) translateX(-50%);
+    }
+  }
+
+  @include tablet {
+    margin-top: 0;
+  }
+
+  &__icon {
+    position: relative;
+    padding-left: 30px;
+    &:before {
+      position: absolute;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// Responsive
+$mobile-width: 445px;
+$tablet-width: 768px;
+$desktop-width: 1170px;
+$fhd-width: 1440px;
+
+// Colors
+$color-white: #fff;
+$color-dark: #000;
+$color-gray-light: #C4C4C4;
+$color-brown: #3F3F3F;
+$color-brown-50: #A4A3A0;
+$color-red: #ED1C24;
+$color-red-110: #CD0910;
+$color-blue: #004076;
+$color-blue-light: #2DA6E0;
+$color-blue-dark: #002338;
+$color-blue-110: #002241;
+$color-blue-brown: #2B3D48;
+$color-blue-10: #1D3B4D;
+$color-blue-20: #081D2A;
+$color-gray: #52616A;
+$color-gray-10: #5D686F;
+$color-light: #E6E8EA;
+
+$color-success: #9acd32;
+$color-error: #ff6347;
+
+// Fonts
+$font-family-base: 'Gilroy-Regular', sans-serif;
+$font-weight-regular: 400;
+
+// Fonts size 12 14 16 20  30
+$fontSize-extra-small: 12px;
+$fontSize-small: 14px;
+$fontSize-medium: 16px;
+$fontSize-large: 38px;
+
+$fontSize-default: $fontSize-medium;
