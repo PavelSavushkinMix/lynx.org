@@ -1,0 +1,25 @@
+.footer {
+  overflow: hidden;
+  position: relative;
+  padding: 150px 20px 50px;
+  background: #4fa452;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  flex: 0 0 auto;
+
+  &__text {
+    font-size: rem(45px);
+    color: #fff;
+  }
+
+  &__logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: url('/assets/img/logo.jpg') no-repeat center;
+    transform: translate3D(100%, 0, 0);
+    transition: transform 0.5s;
+    background-size: cover;
+  }
+}

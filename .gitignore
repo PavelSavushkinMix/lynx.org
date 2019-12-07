@@ -1,0 +1,8 @@
+/node_modules/
+/.idea/
+/dev/css/
+/**/*.psd
+/**/Thumbs.db
+/**/*.DS_Store
+*.lock
+*.log
