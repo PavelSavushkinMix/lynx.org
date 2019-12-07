@@ -44,18 +44,17 @@
   &__contacts-phone {
     display: none;
     position: relative;
-
-    @include tablet {
+    @include mobile {
       display: flex;
       flex-direction: column;
-    }
-    span {
-      font-style: italic;
-      color: $color-brown-50;
     }
     @include tablet {
       position: relative;
       display: flex;
+    }
+    span {
+      font-style: italic;
+      color: $color-brown-50;
     }
   }
 }
