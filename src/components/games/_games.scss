@@ -1,2 +1,10 @@
 .games {
+  .tabs-btn__icon:before {
+    top: -5px;
+  }
+  @include mobile {
+    .title-small {
+      margin-top: 30px;
+    }
+  }
 }

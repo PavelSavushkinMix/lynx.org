@@ -3,19 +3,6 @@
   flex-direction: column;
   padding-top: 35px;
 
-  &-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-    @include tablet {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-  }
-
   &__content {
     flex-direction: column;
     padding: 30px 0;
@@ -28,10 +15,10 @@
     padding: 30px 0;
 
     @include tablet {
-      width: 50%;
+      max-width: 50%;
       padding-top: 0;
+      margin-left: 30px;
       padding-bottom: 0;
-
       text-align: left;
     }
 
@@ -41,16 +28,46 @@
   }
 
   &__content-price {
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+
+    p {
+      color: $color-blue-light;
+    }
+
     b {
       font-size: $fontSize-large;
     }
   }
 
   &__images {
+    img {
+      display: block;
+      max-width: 320px;
+      margin: auto;
+    }
+
     @include tablet {
       max-width: 50%;
       width: 100%;
     }
+  }
+}
+
+.tabs-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  @include tablet {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0;
   }
 }
 
@@ -73,6 +90,7 @@
   cursor: pointer;
   outline: none;
   transition: 0.3s;
+
   &:after {
     content: "";
     position: absolute;
@@ -92,9 +110,11 @@
       bottom: -10px;
     }
   }
+
   &:first-child {
     margin-top: 0;
   }
+
   &:hover:not(.is-active) {
     color: rgba(255, 255, 255, 0.5);
 
@@ -102,20 +122,29 @@
       color: rgba(255, 255, 255, 0.5);
     }
   }
+
   &.is-active {
-    color: $color-white;
+    font-weight: bold;
+    color: $color-red;
+
     &:after {
       transform: scaleY(1) translateX(-50%);
+    }
+
+    .tabs-btn__icon:before {
+      font-size: 20px;
     }
   }
 
   @include tablet {
     margin-top: 0;
+    margin-bottom: 20px;
   }
 
   &__icon {
     position: relative;
     padding-left: 30px;
+
     &:before {
       position: absolute;
       left: 0;

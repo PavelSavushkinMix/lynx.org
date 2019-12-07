@@ -48,7 +48,7 @@ const toggleHeaderBgOnScroll = () => {
 // Toggle active NavLink
 const toggleActiveNavLink = () => {
   const onActive = (e) => {
-    const current = document.querySelector('.header__nav is-active');
+    const current = document.querySelector('.header__nav .is-active');
     if (current !== null) {
       current.classList.remove('is-active');
     }
@@ -68,41 +68,3 @@ const toggleActiveNavLink = () => {
 
 toggleHeaderBgOnScroll();
 toggleActiveNavLink();
-// if scroll  down adds bgc color of header
-/* const addedBgcInHeader = $(document).on('scroll', () => {
-  const POSITION = $(document).scrollTop();
-  if (POSITION > 0) {
-    HEADER.style.backgroundColor = '#081D2A';
-  } else {
-    HEADER.style.backgroundColor = 'transparent';
-  }
-}); */
-
-/* // header activity nav link
-for (let i = 0; i < NAV_LINK_CLASS.length; i += 1) {
-  NAV_LINK_CLASS[i].addEventListener('click', function () {
-    const current = document.getElementsByClassName('active');
-    current[0].className = current[0].className.replace(' active', '');
-    this.className += ' active';
-  });
-} */
-
-/* $('.nav-link').on('click', function () {
-  const id = $(this).attr('href');
-  const topSize =  Math.floor($(id).offset().top);
-  HEADER_NAV.classList.remove('m-show');
-  HEADER_NAV_WRAP.classList.remove('m-show');
-  HAMBURGER_ID.classList.toggle('is-active');
-  //console.log('id', id);
-  //console.log(' top ', topSize);
-
-  $('body,html').animate({ scrollTop: topSize }, 1000); // It doesn't work
-}); */
-
-// Smooth scrolling with links
-/*
-$('a .nav-link').on('click', (event) => {
-  event.preventDefault();
-  $('html,body').animate({ scrollTop: Math.floor($(this.hash).offset().top) }, 500);
-});
-*/
