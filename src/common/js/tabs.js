@@ -17,7 +17,6 @@ const initTabs = (containerClass, btnsClass, contentClass, initialIndex) => {
       current.classList.remove('is-active');
     }
     e.target.classList.add('is-active');
-    console.log('target', e)
     displayCurrentTab(i);
   };
 
@@ -27,4 +26,3 @@ const initTabs = (containerClass, btnsClass, contentClass, initialIndex) => {
 
 initTabs('games', 'tabs-btn', 'tabs__content');
 initTabs('partners', 'tabs-btn', 'tabs__content');
-
