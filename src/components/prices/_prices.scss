@@ -4,4 +4,8 @@
 
 .price {
   background: url("/assets/images/bg-price.jpg");
+
+  &__text {
+    color: $color-blue-light;
+  }
 }
