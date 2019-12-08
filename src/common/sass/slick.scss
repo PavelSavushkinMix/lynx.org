@@ -7,6 +7,7 @@
   border: 1px solid white;
   top: 50%;
   transform: translateY(-50%) rotate(180deg);
+  cursor: pointer;
   z-index: 1;
 
   &:before {

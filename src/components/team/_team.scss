@@ -1,3 +1,31 @@
 .team {
-  padding: 30px 0;
+  max-width: 900px;
+  margin: 0 auto;
+
+  &__slick {
+    padding-top: 50px ;
+  }
+
+  &__image {
+    max-width: 170px;
+    border-radius: 50%;
+  }
+
+  &__descript {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &__status {
+    color: $color-brown-50;
+  }
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-dots {
+    bottom: -40px;
+  }
 }

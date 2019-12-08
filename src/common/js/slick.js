@@ -33,47 +33,33 @@ $(document)
         ],
       });
 
-    $('.team__gallery')
+    $('.team__slick')
       .slick({
+        arrows: true,
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 3,
         dots: true,
-        infinite: true,
 
         responsive: [
           {
             breakpoint: 768,
             settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
               slidesToShow: 2,
+              centerPadding: '60px',
             },
           },
           {
-            breakpoint: 1024,
+            breakpoint: 445,
             settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: true,
-              centerMode: true,
-              centerPadding: '10px',
               slidesToShow: 1,
+              centerPadding: '60px',
             },
           },
         ],
       });
-
     // todo
-    /*$('.partners__slick')
+    /* $('.partners__slick')
       .slick({
         centerMode: true,
         centerPadding: '60px',
@@ -81,5 +67,5 @@ $(document)
         slidesToShow: 3,
         dots: true,
         infinite: true,
-      });*/
+      }); */
   });
