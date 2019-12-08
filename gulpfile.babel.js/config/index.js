@@ -4,7 +4,7 @@ const paths = {
 
   nunjucks: {
     /* ['pages/index/index.html', 'pages/index/about.html'] - multiple entry points */
-    src: ['pages/main/main.njk', 'pages/style-guide/style-guide.njk'],
+    src: ['pages/main/main.njk'],
     dist: '',
   },
 

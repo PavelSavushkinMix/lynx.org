@@ -2,6 +2,8 @@
 
 [STAGE](https://lynxua.netlify.com/)
 
+## Node version 10.13.0
+
 ## Gulp boilerplate
 > All you need for static website coding. Includes live reload, SASS,  autoprefixer, EJS/PUG template engines, images reducing, JS/SASS linters, FTP deployment, JS bundling with browserify, ES2015+ ready, JS/CSS minification.*
 

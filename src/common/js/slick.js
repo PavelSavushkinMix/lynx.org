@@ -32,7 +32,6 @@ $(document)
           },
         ],
       });
-
     $('.team__slick')
       .slick({
         arrows: true,
@@ -40,7 +39,6 @@ $(document)
         centerPadding: '60px',
         slidesToShow: 3,
         dots: true,
-
         responsive: [
           {
             breakpoint: 768,
@@ -58,14 +56,33 @@ $(document)
           },
         ],
       });
-    // todo
-    /* $('.partners__slick')
+    $('.partners__slick')
       .slick({
-        centerMode: true,
-        centerPadding: '60px',
         arrows: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         dots: true,
-        infinite: true,
-      }); */
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              centerPadding: '60px',
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: '60px',
+            },
+          },
+          {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 1,
+              centerPadding: '60px',
+            },
+          },
+        ],
+      });
   });

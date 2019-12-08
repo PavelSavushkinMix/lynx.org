@@ -1,0 +1,26 @@
+.partners {
+  &__certificate-image {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  &__description {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $color-gray-light
+  }
+
+  .slick-dots {
+    padding-top: 40px;
+  }
+  .tabs-btn__icon:before {
+    top: -8px;
+  }
+
+  @include tablet {
+    .partners__slick {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

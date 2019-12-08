@@ -1,34 +1,38 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
   <div class="contacts__info">
-      <h2 class="title">Контанти</h2>
-      <h3 class="contacts__city margin-bottom">м. Горишні Плавні</h3>
-      <div class="contacts__icon-map margin-bottom">
-        <a href="https://goo.gl/maps/84nAQcYNBeSpkkfeA"><span>icon</span></a>
-        <p class="contacts__address">вулиця Добровольського, 73А, Горішні Плавні, Полтавська область, 39800</p>
-      </div>
-      <a class="contacts__email" href="tel:+380 68 911 37 63"><b>+380 68</b> 911 37 63</a>
-      <a class="contacts__phone margin-bottom" href="mailto:Predator-sport@gmail.com">Predator-sport@gmail.com</a>
-      <div class="contacts__time margin-bottom">
-        <div>Cр-Пт: 12.00 - 20.00</div>
-        <div>Сб-Вс: 09.00 - 20.00</div>
-      </div>
-      <nav class="footer__social">
-        <a class="footer__social-link icon-facebook" title="Facebook" href="https://www.facebook.com/fire.lynx.club/"
-           target="_blank"><span>fb</span></a>
-        {#        <a class="footer__social-link icon-telegram" href="#"><span>tg</span></a>#}
-        <a class="footer__social-link icon-instagram" title="Instagram" href="https://www.instagram.com/fire_lynx_club_"
-           target="_blank"><span>in</span></a>
-      </nav>
+    <h2 class="title">Контанти</h2>
+    <h3 class="contacts__city">м. Горишні Плавні</h3>
+      <a class="contacts__address" href="https://goo.gl/maps/84nAQcYNBeSpkkfeA" title="Відкрити карту" target="_blank">
+        <i class="icon-map"></i>
+        вулиця Добровольського, 73А, Горішні Плавні, Полтавська область, 39800
+      </a>
+    <a class="contacts__phone" href="tel:+380689113763" title="Номер телефону"><b>+380 68</b> 911 37 63</a>
+    <a class="contacts__email" href="mailto:shaggotalexandr@gmail.com" title="Електронна пошта">shaggotalexandr@gmail.com</a>
+    <div class="contacts__time">
+      <div>Cр-Пт: 12.00 - 20.00</div>
+      <div>Сб-Вс: 09.00 - 20.00</div>
+    </div>
+    <nav class="footer__social">
+      <a class="footer__social-link icon-facebook" title="Facebook" href="https://www.facebook.com/fire.lynx.club/"
+         target="_blank"><span>fb</span></a>
+      {#
+       TODO when will be this content, need add telegram
+      <a class="footer__social-link icon-telegram" href="#"><span>tg</span></a>
+      #}
+      <a class="footer__social-link icon-instagram" title="Instagram" href="https://www.instagram.com/fire_lynx_club_"
+         target="_blank"><span>in</span></a>
+    </nav>
   </div>
   <div class="contacts__form">
-    <form action="" class="form">
-      <label class="form__label margin-bottom" for="">Зв’яжiться з нами</label>
+    <form class="form" id="form">
+      <label class="form__label">Зв’яжiться з нами</label>
       <div class="form__input-wrap">
-        <input class="form__input" type="text" placeholder="Ім'я"  minlength="2" maxlength="16" required>
-        <input class="form__input" type="tel" placeholder="Телефон"  minlength="9" maxlength="13" required>
+        <input class="form__input" type="text" placeholder="Ім'я" minlength="2" maxlength="16" required>
+        <input class="form__input" type="tel" placeholder="Телефон" minlength="9" maxlength="13" required>
       </div>
-      <textarea class="form__textarea margin-bottom" name="" id="" wrap="soft" cols="1" rows="1" placeholder="Ваше питання чи повідомлення"></textarea>
-      <button class="btn form__btn" type="submit"></button>
+      <textarea class="form__textarea" name="form" wrap="soft" cols="1" rows="1"
+                placeholder="Ваше питання чи повідомлення"></textarea>
+      <button class="form__btn" type="submit"></button>
     </form>
   </div>
 </section>

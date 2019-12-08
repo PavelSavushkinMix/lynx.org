@@ -3,9 +3,11 @@
 .footer {
   padding-top: 32px;
   padding-bottom: 32px;
+
   &__container {
     @include container();
   }
+
   &__top {
     display: flex;
     flex-direction: column;
@@ -17,6 +19,7 @@
       margin-bottom: 30px;
     }
   }
+
   &__phone {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -26,27 +29,38 @@
       transform: translateX(-40%);
     }
   }
+
+  &__phone-link:hover,
+  &__site:hover {
+    color: $color-blue-light;
+  }
+
   &__social {
     margin-bottom: 20px;
-    @include tablet{
+    @include tablet {
       margin-bottom: 0;
     }
   }
+
   &__social-link {
     margin-left: 20px;
     font-size: 30px;
     color: $color-gray-10;
     transition: color 0.5s;
+
     &:first-child {
       margin-left: 0;
     }
+
     &:hover {
       color: $color-blue-light;
     }
+
     span {
       font-size: 0;
     }
   }
+
   &__site {
     display: block;
     text-align: center;
