@@ -23,7 +23,7 @@ const showMobileMenu = () => {
 const closeMobileMenu = () => {
   HEADER_NAV.classList.remove('m-show');
   HEADER_NAV_WRAP.classList.remove('m-show');
-  BODY.style.overflow = 'auto';
+  BODY.style.overflow = 'inherit';
 };
 
 const toggleMobileMenu = () => {
