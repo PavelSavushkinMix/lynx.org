@@ -17,13 +17,14 @@ const HAMBURGER_CLASS = document.getElementsByClassName('hamburger');
 const showMobileMenu = () => {
   HEADER_NAV.classList.add('m-show');
   HEADER_NAV_WRAP.classList.add('m-show');
-  BODY.style.overflow = 'hidden';
+  BODY.classList.add('scroll-off');
 };
 
 const closeMobileMenu = () => {
   HEADER_NAV.classList.remove('m-show');
   HEADER_NAV_WRAP.classList.remove('m-show');
-  BODY.style.overflow = 'inherit';
+  BODY.classList.remove('scroll-off');
+
 };
 
 const toggleMobileMenu = () => {

@@ -14,14 +14,12 @@ html {
   font-size: $fontSize-default;
   font-weight: $font-weight-regular;
   -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   background-color: $color-blue-20;
   line-height: 1.5;
-  overflow-x: hidden;
 }
 
 main {
@@ -132,3 +130,6 @@ b {
   font-family: "Gilroy-Regular", sans-serif;
 }
 
+.scroll-off {
+  overflow: hidden;
+}
