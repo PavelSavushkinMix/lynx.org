@@ -40,6 +40,18 @@
   }
 
   &__nav-items {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        padding-left: 40px;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+
     a {
       border-bottom: 2px solid transparent;
 
@@ -54,17 +66,6 @@
       color: $color-red;
       font-weight: bold;
       border-bottom: 2px solid $color-red;
-    }
-    @include desktop {
-      display: flex;
-      flex-direction: row;
-
-      li {
-        padding-left: 40px;
-        &:first-child {
-          padding-left: 0;
-        }
-      }
     }
   }
 
@@ -83,6 +84,14 @@
 
     a:hover{
       color: $color-blue-light;
+    }
+  }
+
+  .is-active {
+    a {
+      color: $color-red;
+      font-weight: bold;
+      border-bottom: 2px solid $color-red;
     }
   }
 }
