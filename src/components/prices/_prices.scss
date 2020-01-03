@@ -3,7 +3,8 @@
  }
 
 .price {
-  background: url("/assets/images/bg-price.jpg");
+  background: url("/assets/images/bg-price.jpg") no-repeat center;
+  background-size: cover;
 
   &__text {
     color: $color-blue-light;

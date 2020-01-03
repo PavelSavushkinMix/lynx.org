@@ -1,7 +1,7 @@
 .team {
-  max-width: 900px;
   margin: 0 auto;
-
+  background: url("/assets/images/bg-teams.jpg") no-repeat center;
+  background-size: cover;
   &__slick {
     padding-top: 50px ;
   }
